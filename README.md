@@ -1,3 +1,3 @@
 # C++ Programming
 
-#### This is a repository that includes program written in C++ language.
+#### This is a repository that includes programs written in C++ language.
