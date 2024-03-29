@@ -53,4 +53,6 @@ int main() {
   selectionSort(array, size);
 
   printResult(array, size);
+
+  return 0;
 }
