@@ -48,4 +48,6 @@ int main() {
   insertionSort(array, size);
 
   printResult(array, size);
+
+  return 0;
 }
