@@ -25,13 +25,6 @@ void selectionSort(int array[], int size) {
   }
 }
 
-void swap(int &a, int &b) {
-  int temp;
-  temp = a;
-  a = b;
-  b = temp;
-}
-
 void printResult(int array[], int size) {
   cout << "The sorted elements are as follows : " << endl;
   for (int i = 0; i < size; i++) {
