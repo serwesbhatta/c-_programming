@@ -19,13 +19,6 @@ void bubbleSort(int array[], int size) {
   }
 }
 
-void swap(int &a, int &b) {
-  int temp;
-  temp = a;
-  a = b;
-  b = temp;
-}
-
 void inputElements(int array[], int size) {
   cout << "Enter " << size << " elements: " << endl;
   for (int i = 0; i < size; i++) {
