@@ -5,16 +5,17 @@
 using namespace std;
 
 class Solution {
+private:
+  bool match = true;
+  int i = 0;
+  string result = "";
+  char temp;
+
 public:
   string longestCommonPrefix(vector<string> &strs) {
     if (strs.empty()) {
       return "";
     }
-
-    bool match = true;
-    int i = 0;
-    string result = "";
-    char temp;
 
     while (match) {
       if (i >= strs[0].size()) {
@@ -41,3 +42,13 @@ public:
     return result;
   }
 };
+
+int main() {
+  Solution S;
+  string prefix;
+  vector<string> array = {"flower", "flow", "flee"};
+
+  prefix = S.longestCommonPrefix(array);
+
+  cout << prefix;
+}
