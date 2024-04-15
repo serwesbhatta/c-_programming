@@ -41,3 +41,13 @@ public:
     }
   }
 };
+
+int main() {
+  Solution S;
+  string s;
+  
+  cout << "Enter parentheses : ";
+  cin >> s;
+
+  cout << boolalpha << S.validParentheses(s);
+}
