@@ -12,6 +12,12 @@ Output: [1,2,4]
 Explanation: The array represents the integer 123.
 Incrementing by one gives 123 + 1 = 124.
 Thus, the result should be [1,2,4].
+
+Constraints:
+
+1 <= digits.length <= 100
+0 <= digits[i] <= 9
+digits does not contain any leading 0's.
 */
 
 #include <iostream>
@@ -42,3 +48,23 @@ public:
     return result;
   }
 };
+
+int main() {
+  vector<vector<int>> digits = {
+      {1, 2, 3}, {4, 3, 2, 1}, {9}, {1, 2, 3, 4, 5, 6, 7, 8, 9, 2, 5,
+                                     9, 3, 5, 1, 6, 8, 4, 0, 1, 2}};
+
+  vector<vector<int>> results(digits.size());
+
+  for (int i = 0; i < digits.size(); i++) {
+    Solution S;
+    results[i] = S.plusOne(digits[i]);
+  }
+
+  for (int i = 0; i < results.size(); i++) {
+    for (int j = 0; j < results[i].size(); j++) {
+      cout << results[i][j] << " ";
+    }
+    cout << endl;
+  }
+}
