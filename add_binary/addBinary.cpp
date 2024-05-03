@@ -52,3 +52,22 @@ public:
     return result;
   }
 };
+
+int main() {
+  Solution S1, S2;
+
+  string num11 = "11";
+  string num12 = "1";
+  string num21 = "1010";
+  string num22 = "1011";
+
+  string sum1, sum2;
+
+  sum1 = S1.addBinary(num11, num12);
+  sum2 = S2.addBinary(num21, num22);
+
+  cout << "The sum of " << num11 << " and " << num12 << " is " << sum1 << "."
+       << endl;
+  cout << "The sum of " << num21 << " and " << num22 << " is " << sum2 << "."
+       << endl;
+}
