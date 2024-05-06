@@ -22,6 +22,10 @@ Constraints:
 1 <= n <= 45
 */
 
+#include <iostream>
+
+using namespace std;
+
 class Solution {
 public:
   int climbStairs(int n) {
@@ -36,3 +40,21 @@ public:
     return dp[n];
   }
 };
+
+int main() {
+  Solution S1, S2, S3;
+
+  int n[3];
+  n[0] = 2;
+  n[1] = 3;
+  n[2] = 45;
+  int steps[3];
+
+  steps[0] = S1.climbStairs(n[0]);
+  steps[1] = S2.climbStairs(n[1]);
+  steps[2] = S3.climbStairs(n[2]);
+
+  for (int i = 0; i < 3; i++) {
+    cout << "The number of ways to climb " << n[i] << " steps is " << steps[i] << "." << endl;
+  }
+}
